@@ -37,7 +37,7 @@ localStorage.setItem("products", JSON.stringify(products));
 
 // Function to display products
 function displayProducts(productsArray) {
-  let cardContainer = document.querySelector(".row-cols-1");
+  let cardContainer = document.querySelector("[data-products]");
   cardContainer.innerHTML = "";
 
   productsArray.forEach((product, index) => {

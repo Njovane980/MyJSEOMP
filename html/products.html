@@ -27,25 +27,28 @@
         </div>
     </nav>
    </header>
-   <main>
-    <section>
+   <main class="container-fluid">
+    <section class="row">
         <!--Search Bar-->
-        <div class="search-container">
+        <div class="col search-container">
             <input type="text" id="searchInput" placeholder="search product">
             <button onclick="searchProducts()">Search</button>
         </div>
 
         <!--Sorting Buttons-->
-        <div class="sorting-container">
+        <div class="col sorting-container">
             <label for="sort">Sort by:</label>
             <select id=""></select>
 
         </div>
     </section>
+    <section class="row justify-content-center gap-3 " data-products>
+
+    </section>
    </main>
     <footer>
         <p>&copy; 2023 Organics Cosmetics Wholesaler. All rights reserved.</p>
     </footer>
-    <script src="footer.html"></script>
+    <script src="../script/product.js"></script>
 </body>
 </html>

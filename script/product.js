@@ -1,11 +1,35 @@
 // // Product array
 // let products = [
-//   { name: "Coffee, Sugar and Almond Oil Face Scrub", price: 70, image: "https://i.postimg.cc/cCmGj2CW/images-5.jpg" },
-//   { name: "Coffee, Sugar and Castor Oil Face Scrub", price: 70, image: "https://i.postimg.cc/G2t7PpTv/images-1.jpg"},
-//   { name: "Turmeric Soap", price: 60, image:"https://i.postimg.cc/bw6FZbsq/soap-1.jpg" },
-//   { name: "Olive Soap", price: 50, image: "https://i.postimg.cc/9Qqq9Hfz/soap-4.jpg"},
-//   { name: "Aloe Vera", price: 90, image: "https://i.postimg.cc/s2G1Mk3K/images-7.jpg" },
-//   { name: "Aloe Vera Toner", price: 90, image: "https://i.postimg.cc/JzfM2GWc/images-8.jpg" },
+//   {
+//     name: "Coffee, Sugar and Almond Oil Face Scrub",
+//     price: 70,
+//     image: "https://i.postimg.cc/cCmGj2CW/images-5.jpg",
+//   },
+//   {
+//     name: "Coffee, Sugar and Castor Oil Face Scrub",
+//     price: 70,
+//     image: "https://i.postimg.cc/G2t7PpTv/images-1.jpg",
+//   },
+//   {
+//     name: "Turmeric Soap",
+//     price: 60,
+//     image: "https://i.postimg.cc/bw6FZbsq/soap-1.jpg",
+//   },
+//   {
+//     name: "Olive Soap",
+//     price: 50,
+//     image: "https://i.postimg.cc/9Qqq9Hfz/soap-4.jpg",
+//   },
+//   {
+//     name: "Aloe Vera",
+//     price: 90,
+//     image: "https://i.postimg.cc/s2G1Mk3K/images-7.jpg",
+//   },
+//   {
+//     name: "Aloe Vera Toner",
+//     price: 90,
+//     image: "https://i.postimg.cc/JzfM2GWc/images-8.jpg",
+//   },
 // ];
 
 // //   json
@@ -17,7 +41,7 @@
 //   cardContainer.innerHTML = "";
 
 //   productsArray.forEach((product, index) => {
-//     console.log( product )
+//     console.log(product);
 //     let card = document.createElement("div");
 //     card.classList.add("col");
 //     card.innerHTML = `

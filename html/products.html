@@ -27,24 +27,47 @@
         </div>
     </nav>
    </header>
-   <main class="container-fluid">
-    <section class="row">
-        <!--Search Bar-->
-        <div class="col search-container">
-            <input type="text" id="searchInput" placeholder="search product">
-            <button onclick="searchProducts()">Search</button>
-        </div>
-
-        <!--Sorting Buttons-->
-        <div class="col sorting-container">
-            <label for="sort">Sort by:</label>
-            <select id=""></select>
-
-        </div>
-    </section>
-    <section class="row justify-content-center gap-3 " data-products>
-
-    </section>
+   <main>
+    <div class="header">
+        <h2>Products</h2>
+        <!-- Search bar-->
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button onclick="searchProducts()">Search</button>
+        <!-- Sort bar-->
+        <select id="sort" onchange="sortProducts()">
+            <option value="price_asc">Price: Low to High</option>
+            <option value="price_desc">Price: High to Low</option>
+        </select>
+    </div>
+    <div class="row-cols-1" id="productContainer">
+        <!-- Product cards will be displayed here -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">description</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">button</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">description</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-body-secondary">Button</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
    </main>
     <footer>
         <p>&copy; 2023 Organics Cosmetics Wholesaler. All rights reserved.</p>

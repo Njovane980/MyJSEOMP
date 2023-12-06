@@ -30,7 +30,9 @@ let products = [
       image: "https://i.postimg.cc/JzfM2GWc/images-8.jpg",
     },
   ];
-  localStorage.getItem
+
+  let checkOut = [];
+  
   // Function to display products
 function displayProducts(productsArray) {
     let cardContainer = document.getElementById('productContainer');
@@ -47,7 +49,7 @@ function displayProducts(productsArray) {
                   <p class="card-text">R${product.price}</p>
                 </div>
                 <div class="card-footer">
-                  <button class="body-secondary">Add to cart</button>
+                  <button class="body-secondary" id="btn" onclick='addToCart(${JSON.stringify(product)})'>Add to cart</button>
                 </div>
               </div>
         `;
@@ -83,10 +85,10 @@ function sortProducts() {
 
     displayProducts(sortedProducts);
 };
-    if (filteredProducts.length > 0) {
-        displayProducts(filteredProducts);
+    
+function addToCart(item) {
+    if(item) {
+        checkOut.push(item)
+        localStorage.setItem('cart', JSON.stringify(checkOut))
     }
-    else {
-        let cardContainer = document.getElementById('productContainer');
-        cardContainer.innerHTML = '<p>Item not found</p>';
-    }
+}

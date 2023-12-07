@@ -45,9 +45,13 @@ nav .navigation ul li a:hover {
     object-fit: cover;
 }
 .header{
-    background-color: rgb(233, 180, 198);
+    background-color: rgb(242, 210, 220);
     padding: 10px;
     text-align: center;
+    font-size: 20px;
+}
+.para1 {
+    padding: 60px
 }
 .row-cols-1 {
     display: flex;
@@ -58,4 +62,23 @@ nav .navigation ul li a:hover {
 .card {
     width: 200px;
     margin: 15px;
+}
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.card-text {
+    align-items: center;
+}
+.search-sort{
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(242, 210, 220);
+    padding: 10px 0;
 }

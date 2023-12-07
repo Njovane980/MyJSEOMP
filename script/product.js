@@ -92,3 +92,14 @@ function addToCart(item) {
         localStorage.setItem('cart', JSON.stringify(checkOut))
     }
 }
+
+function addToCart(item) {
+    if  (item) {
+        let checkOut = JSON.parse(localStorage.getItem('cart')) || [];
+        checkOut.push(items);
+        localStorage.setItem('cart', JSON.stringify(checkOut));
+
+        //This triggers display update on the checkout page
+        window.opener.dislayCheckoutIgtems();
+    }
+}

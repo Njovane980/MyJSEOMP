@@ -12,7 +12,9 @@
 <body>
     <nav>
         <div>
-            <img src="https://i.postimg.cc/hvQ15s0b/images-11.jpg" alt="">
+            <a class="logoImage" href="/index.html">
+                <img src="https://i.postimg.cc/hvQ15s0b/images-11.jpg" alt="">
+            </a>
         </div>
         <div class="navigation">
             <ul>
@@ -26,29 +28,27 @@
         </div>
     </nav>
     <main>
-        <div class="header">
-            <h2>Checkout</h2>
-        </div>
-        <div id="checkoutContainer">
-            <table>
-                <caption>
-                  This is an example table, and this is its caption to describe the contents.
-                </caption>
-                <thead>
-                  <tr>
-                    <th>Item name:</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Quantity:</td>
-                  </tr>
-                  <tr>
-                    <td>Price:</td>
-                  </tr>
+        <div class="row-cols-1">
+        <table>
+            <tr>
+                <th>
+                    Products
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Amount
+                </th>
+                <tbody id="checkoutContainer">
+
                 </tbody>
-              </table>
-        </div>
+            </tr>
+        </table>
+    </div>
     </main>
     <footer class="mt-3 container-fluid position-relative">
         <p class="lead text-center">&copy 

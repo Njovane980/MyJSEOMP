@@ -20,12 +20,12 @@ let products = [
       image: "https://i.postimg.cc/9Qqq9Hfz/soap-4.jpg",
     },
     {
-      name: "Aloe Vera",
+      name: "Aloe Vera Toner",
       price: 140,
       image: "https://i.postimg.cc/s2G1Mk3K/images-7.jpg",
     },
     {
-      name: "Aloe Vera Toner",
+      name: "Aloe Vera and Lemon Toner",
       price: 130,
       image: "https://i.postimg.cc/JzfM2GWc/images-8.jpg",
     },
@@ -37,7 +37,7 @@ let products = [
 function displayProducts(productsArray) {
     let cardContainer = document.getElementById('productContainer');
     cardContainer.innerHTML = '';
-
+if (products.length) {
     productsArray.forEach((product, index) => {
         let card = document.createElement('div');
         card.classList.add('card');
@@ -56,6 +56,10 @@ function displayProducts(productsArray) {
 
         cardContainer.appendChild(card);
     });
+} else {
+
+    cardContainer.innerHTML = 'Item not found';
+}
 }
 
 // Initial display of products

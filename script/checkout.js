@@ -19,3 +19,17 @@ function displayCheckoutItems() {
 }
 //Initial display of checkout items
 displayCheckoutItems();
+
+//clearing the cart
+function clearCart () {
+    localStorage.removeItem("cart");
+    checkOut = [];
+    displayCheckoutItems();
+    showThankYouMessage();
+}
+function buyNow() {
+    clearCart();
+}
+function showThankYouMessage () {
+    document.getElementById ("thankYouMessage").style.display = "block";
+}

@@ -31,7 +31,7 @@ let products = [
     },
   ];
 
-  let checkOut = [];
+  let checkOut = JSON.parse(localStorage.getItem('cart')) || [];
   
   // Function to display products
 function displayProducts(productsArray) {
@@ -96,10 +96,10 @@ function addToCart(item) {
 function addToCart(item) {
     if  (item) {
         let checkOut = JSON.parse(localStorage.getItem('cart')) || [];
-        checkOut.push(items);
+        checkOut.push(item);
         localStorage.setItem('cart', JSON.stringify(checkOut));
 
         //This triggers display update on the checkout page
-        window.opener.dislayCheckoutIgtems();
+        // window.opener.dislayCheckoutIgtems();
     }
 }

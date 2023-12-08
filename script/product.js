@@ -73,13 +73,13 @@ function searchProducts() {
     product.name.toLowerCase().includes(searchInput)
   );
   if (searchInput.trim() === "") {
-//if the search input is empty display all the products
-displayProducts(products);
+    //if the search input is empty display all the products
+    displayProducts(products);
   } else {
     let filteredProducts = products.filter((product) =>
       product.name.toLowerCase().includes(searchInput)
     );
-displayProducts(filteredProducts);
+    displayProducts(filteredProducts);
   }
 }
 

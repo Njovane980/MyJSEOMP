@@ -44,8 +44,8 @@ function displayProducts() {
             <td><img src="${product.image}" alt="${product.name}" style="max-width: 50px; max-height: 50px;"></td>
             <td>
                 <button onclick="editProduct(${index})">Edit</button>
+                <button onclick="addProduct(${index})">Add Product</button>
                 <button onclick="deleteProduct(${index})">Delete</button>
-                <button onclick="openModal(${index})">View Details</button>
             </td>
         `;
         tbody.appendChild(row);
@@ -67,9 +67,25 @@ function editProduct(index) {
         updateProductPage();
     }
 }
+function addProduct(index) {
+   //adding the product
+    let newName = prompt("Enter new name:", products[index].name);
+    let newPrice = prompt("Enter new price:", products[index].price);
+    let newImage = prompt("Enter new image URL:", products[index].image);
+
+    if (newName && newPrice && newImage) {
+        products[index] = {
+            name: newName,
+            price: parseFloat(newPrice),
+            image: newImage,
+        };
+        displayProducts();
+        updateProductPage();
+    }
+}
 
 function deleteProduct(index) {
-    // Implement the logic to delete the product at the specified index
+    //deleting product
     let confirmDelete = confirm("Are you sure you want to delete this product?");
     if (confirmDelete) {
         products.splice(index, 1);
